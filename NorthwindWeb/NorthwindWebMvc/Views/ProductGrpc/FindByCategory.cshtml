@@ -1,0 +1,128 @@
+﻿@model IEnumerable<NorthwindWebMvc.Models.Product>
+
+@{
+    ViewData["Title"] = "Listado de Productos";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi-box-seam"></i> Listado de Productos
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-controller="Home" asp-action="Index"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+
+                    <a asp-controller="Product" asp-action="Create"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-plus-circle"></i> Nuevo
+                    </a>
+                </div>
+            </div>
+            <form asp-action="FindByCategory" method="post" class="crud-filter row g-2 mb-2">
+                <div class="col-md-4">
+                    <input type="text"
+                           name="CategoryName"
+                           value="@ViewBag.CategoryName"
+                           class="form-control"
+                           placeholder="Consulte por nombre de la categoría"
+                           required />
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-search"></i> Consultar
+                    </button>
+                </div>
+
+                <div class="col-md-2">
+                    <a asp-action="FindByCategory" class="btn btn-secondary w-100">
+                        Limpiar
+                    </a>
+                </div>
+            </form>
+            <div class="card-body bg-white">
+                <div class="d-flex justify-content-end mb-2 crud-total">
+                    <span class="text-muted fw-semibold">
+                        Total de registros mostrados: @Model.Count()
+                    </span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center crud-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().ProductID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().ProductName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().SupplierID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().CategoryID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().UnitPrice)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.First().UnitsInStock)
+                                </th>
+                                <th>
+                                    Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Any())
+                            {
+                                <tr>
+                                    <td colspan="6" class="text-muted py-3">
+                                        No hay productos para mostrar.
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.ProductID</td>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.SupplierDisplay</td>
+                                        <td>@item.CategoryDisplay</td>
+                                        <td>@item.UnitPriceDisplay</td>
+                                        <td>@item.UnitsInStockDisplay</td>
+                                        <td>
+                                            <a asp-controller="Product" asp-action="Edit" asp-route-id="@item.ProductID"
+                                               class="btn btn-sm btn-outline-warning me-2">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+
+                                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductID"
+                                               class="btn btn-sm btn-outline-info me-2">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+
+                                            <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ProductID"
+                                               class="btn btn-sm btn-outline-danger"
+                                               onclick="return confirm('¿Está seguro de descontinuar este producto?');">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

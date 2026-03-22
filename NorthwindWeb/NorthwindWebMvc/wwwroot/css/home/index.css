@@ -1,0 +1,61 @@
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #e8f0fe, #f8fbff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+    .hero h1 {
+        color: #0078d4;
+        font-weight: 800;
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+/* STATS SECTION */
+.stats {
+    margin: 60px auto;
+}
+
+    .stats .card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+    }
+
+        .stats .card:hover {
+            transform: translateY(-8px);
+        }
+
+    .stats h3 {
+        color: #0078d4;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .stats p {
+        color: #777;
+        font-weight: 500;
+    }
+
+.counter {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+    .counter.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.chart-container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+

@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option csharp_namespace = "NorthwindgRPC";
+
+package orders;
+
+service Orders {
+    rpc GetByCustomer (CustomerFilter) returns (OrdenResponse);
+    rpc GetBetweenDates (DateFilter) returns (OrdenResponse);
+}
+
+message DateFilter {
+  string fechaInicio = 1;
+  string fechaFin = 2;
+}
+
+message CustomerFilter {
+    string customerID = 1;
+}
+
+message Orden {
+    int32 orderID = 1;
+    string customerID = 2;
+    string companyName = 3;
+    string orderDate = 4;
+    string requiredDate = 5;
+    string shippedDate = 6;
+    string shipName = 7;
+    string shipCity = 8;
+    string shipCountry = 9;
+}
+
+message OrdenResponse {
+    repeated Orden items = 1;
+}

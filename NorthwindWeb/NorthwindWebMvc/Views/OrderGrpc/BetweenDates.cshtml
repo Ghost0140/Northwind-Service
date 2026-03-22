@@ -1,0 +1,124 @@
+﻿@model IEnumerable<NorthwindWebMvc.Models.Order>
+
+@{
+    ViewData["Title"] = "Pedidos entre Fechas";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+
+            <!-- HEADER -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-calendar-range"></i> Órdenes entre Fechas
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-controller="Home" asp-action="Index"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+                </div>
+            </div>
+
+            <!-- MENSAJE DE ERROR -->
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger m-3">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    @ViewBag.Error
+                </div>
+            }
+
+            <!-- FILTRO POR FECHAS -->
+            <form asp-action="BetweenDates" method="post" class="crud-filter row g-2 mb-2 px-3">
+
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Fecha inicio</label>
+                    <input type="date"
+                           name="fechaInicio"
+                           class="form-control"
+                           value="@ViewBag.FechaInicio"
+                           required />
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Fecha fin</label>
+                    <input type="date"
+                           name="fechaFin"
+                           class="form-control"
+                           value="@ViewBag.FechaFin"
+                           required />
+                </div>
+
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-search"></i> Buscar
+                    </button>
+                </div>
+
+                <div class="col-md-2 d-flex align-items-end">
+                    <a asp-action="BetweenDates" class="btn btn-secondary w-100">
+                        Limpiar
+                    </a>
+                </div>
+            </form>
+
+            <!-- RESULTADOS -->
+            <div class="card-body bg-white">
+
+                <div class="d-flex justify-content-end mb-2 crud-total">
+                    <span class="text-muted fw-semibold">
+                        Total de registros mostrados: @Model.Count()
+                    </span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center crud-table">
+                        <thead>
+                            <tr>
+                                <th>@Html.DisplayNameFor(m => m.First().OrderID)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().CompanyName)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().OrderDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().RequiredDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShippedDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShipName)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShipCity)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShipCountry)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Any())
+                            {
+                                <tr>
+                                    <td colspan="8" class="text-muted py-3">
+                                        <i class="bi bi-info-circle"></i>
+                                        No hay órdenes para mostrar.
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var o in Model)
+                                {
+                                    <tr>
+                                        <td>@o.OrderID</td>
+                                        <td>@(o.CompanyName ?? o.CustomerID)</td>
+                                        <td>@o.OrderDateDisplay</td>
+                                        <td>@o.RequiredDateDisplay</td>
+                                        <td>@o.ShippedDateDisplay</td>
+                                        <td>@o.ShipNameDisplay</td>
+                                        <td>@o.ShipCityDisplay</td>
+                                        <td>@o.ShipCountryDisplay</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

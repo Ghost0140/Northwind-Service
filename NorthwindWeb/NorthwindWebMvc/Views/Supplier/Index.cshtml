@@ -1,0 +1,150 @@
+﻿@model NorthwindWebMvc.Models.PagedList<NorthwindWebMvc.Models.Supplier>
+
+@{
+    ViewData["Title"] = "Proveedores";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-truck"></i> Listado de Proveedores
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-controller="Home" asp-action="Index"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+
+                    <a asp-action="Create"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-plus-circle"></i> Nuevo
+                    </a>
+                </div>
+            </div>
+
+            <form method="get" asp-action="Index" class="crud-filter row g-2 mb-2">
+                <div class="col-md-4">
+                    <input type="text"
+                           name="nombre"
+                           value="@ViewBag.Nombre"
+                           class="form-control"
+                           placeholder="Buscar proveedor por nombre..." />
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-search"></i> Filtrar
+                    </button>
+                </div>
+
+                <div class="col-md-2">
+                    <a asp-action="Index" class="btn btn-secondary w-100">
+                        Limpiar
+                    </a>
+                </div>
+            </form>
+
+            @* Mensajes *@
+            @if (TempData["mensaje"] != null)
+            {
+                <div class="alert alert-info alert-dismissible fade show m-3">
+                    <i class="bi bi-info-circle-fill"></i>
+                    @TempData["mensaje"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <div class="card-body bg-white">
+                <div class="d-flex justify-content-end mb-2 crud-total">
+                    <span class="text-muted fw-semibold">
+                        Total de registros mostrados: @Model.TotalItems
+                    </span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center crud-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().SupplierID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().CompanyName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().ContactName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().CargoID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().PaisID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Items.First().Phone)
+                                </th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Items.Any())
+                            {
+                                <tr>
+                                    <td colspan="6" class="text-muted py-3">
+                                        No hay proveedores para mostrar.
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td>@item.SupplierID</td>
+                                        <td>@item.CompanyName</td>
+                                        <td>@item.ContactNameDisplay</td>
+                                        <td>@item.CargoDisplay</td>
+                                        <td>@item.PaisDisplay</td>
+                                        <td>@item.PhoneDisplay</td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.SupplierID"
+                                               class="btn btn-sm btn-outline-warning me-2">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+
+                                            <a asp-action="Details" asp-route-id="@item.SupplierID"
+                                               class="btn btn-sm btn-outline-info me-2">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                @* PAGINACIÓN *@
+                <nav aria-label="Page navigation" class="mt-3">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                            <a class="page-link" asp-action="Index" asp-route-page="@(Model.PageNumber - 1)" asp-route-nombre="@ViewBag.Nombre">Anterior</a>
+                        </li>
+
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-nombre="@ViewBag.Nombre">@i</a>
+                            </li>
+                        }
+
+                        <li class="page-item @(Model.PageNumber == Model.TotalPages ? "disabled" : "")">
+                            <a class="page-link" asp-action="Index" asp-route-page="@(Model.PageNumber + 1)" asp-route-nombre="@ViewBag.Nombre">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>  
+            </div>
+        </div>
+    </div>
+</div>

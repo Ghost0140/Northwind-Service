@@ -1,0 +1,93 @@
+﻿@model NorthwindWebMvc.Models.Customer
+
+@{
+    ViewData["Title"] = "Detalles del Cliente";
+}
+
+<div class="crud-page">
+    <div class="container">
+
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-info-circle"></i> Detalles del Cliente
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.CustomerID"
+                       class="btn btn-light btn-sm btn-action">
+                        <i class="bi bi-pencil"></i> Editar
+                    </a>
+
+                    <a asp-action="Index"
+                       class="btn btn-light btn-sm btn-action">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-body bg-white">
+                <dl class="row crud-details">
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.CustomerID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.CustomerID</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.CompanyName)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box fw-semibold">@Model.CompanyName</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.ContactName)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.ContactNameDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.CargoID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.CargoDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.Address)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.AddressDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.PostalCode)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.PostalCodeDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.PaisID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.PaisDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.PhoneDisplay</div>
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</div>

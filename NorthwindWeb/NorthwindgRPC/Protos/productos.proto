@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "NorthwindgRPC";
+
+package products;
+
+service Products {
+	rpc GetAll (Empty) returns (Productos);
+    rpc GetBySupplier (SupplierFilter) returns (Productos);
+    rpc GetByCategory (CategoryFilter) returns (Productos);
+}
+
+message Empty {}
+
+message SupplierFilter {
+	string supplierName = 1;
+}
+
+message CategoryFilter {
+	string categoryName = 1;
+}
+
+message Producto {
+	int32 productID = 1;
+    string productName = 2;
+    int32 supplierID = 3;
+    string supplierName = 4;
+    int32 categoryID = 5;
+    string categoryName = 6;
+    string quantityPerUnit = 7;
+    double unitPrice = 8;
+    int32 unitsInStock = 9;
+    int32 unitsOnOrder = 10;
+    int32 reorderLevel = 11;
+}
+
+message Productos {
+	repeated Producto items=1;
+}

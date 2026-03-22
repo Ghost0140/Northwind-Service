@@ -1,0 +1,95 @@
+﻿@model NorthwindWebMvc.Models.Product
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-info-circle"></i> Detalles del Producto
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.ProductID"
+                       class="btn btn-light btn-sm btn-action">
+                        <i class="bi bi-pencil"></i> Editar
+                    </a>
+
+                    <a asp-action="Index"
+                       class="btn btn-light btn-sm btn-action">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                </div>
+            </div>
+            <div class="card-body bg-white">
+                <dl class="row crud-details">
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.ProductID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.ProductID</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.ProductName)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.ProductName</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.SupplierID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.SupplierDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.CategoryID)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.CategoryDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.QuantityPerUnit)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.QuantityPerUnitDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.UnitPrice)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.UnitPriceDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.UnitsInStock)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.UnitsInStockDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.UnitsOnOrder)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.UnitsOnOrderDisplay</div>
+                    </dd>
+
+                    <dt class="col-sm-3">
+                        @Html.DisplayNameFor(model => model.ReorderLevel)
+                    </dt>
+                    <dd class="col-sm-9">
+                        <div class="detail-box">@Model.ReorderLevelDisplay</div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

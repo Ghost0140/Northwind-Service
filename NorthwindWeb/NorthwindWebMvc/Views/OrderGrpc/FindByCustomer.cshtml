@@ -1,0 +1,97 @@
+﻿@model IEnumerable<NorthwindWebMvc.Models.Order>
+
+@{
+    ViewData["Title"] = "Pedidos por Cliente";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-receipt"></i> Pedidos por Cliente
+                </h4>
+
+                <div class="d-flex gap-2">
+                    <a asp-controller="Home" asp-action="Index"
+                       class="btn btn-outline-light btn-sm btn-action">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+                </div>
+            </div>
+
+            <!-- FILTRO -->
+            <form asp-action="FindByCustomer" method="post" class="crud-filter row g-2 mb-2">
+                <div class="col-md-4">
+                    <input type="text"
+                           name="customerID"
+                           value="@ViewBag.CustomerID"
+                           class="form-control"
+                           placeholder="Ingrese el ID del cliente"
+                           maxlength="5"
+                           required />
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-search"></i> Consultar
+                    </button>
+                </div>
+
+                <div class="col-md-2">
+                    <a asp-action="FindByCustomer" class="btn btn-secondary w-100">
+                        Limpiar
+                    </a>
+                </div>
+            </form>
+
+            <!-- RESULTADOS -->
+            <div class="card-body bg-white">
+                <div class="d-flex justify-content-end mb-2 crud-total">
+                    <span class="text-muted fw-semibold">
+                        Total de registros mostrados: @Model.Count()
+                    </span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center crud-table">
+                        <thead>
+                            <tr>
+                                <th>@Html.DisplayNameFor(m => m.First().OrderID)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().CompanyName)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().OrderDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().RequiredDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShippedDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.First().ShipCountry)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Any())
+                            {
+                                <tr>
+                                    <td colspan="6" class="text-muted py-3">
+                                        No hay pedidos para mostrar.
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.OrderID</td>
+                                        <td>@item.CompanyName</td>
+                                        <td>@item.OrderDateDisplay</td>
+                                        <td>@item.RequiredDateDisplay</td>
+                                        <td>@item.ShippedDateDisplay</td>
+                                        <td>@item.ShipCountryDisplay</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

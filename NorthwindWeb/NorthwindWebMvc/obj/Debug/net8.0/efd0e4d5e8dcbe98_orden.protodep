@@ -1,0 +1,2 @@
+obj\Debug\net8.0/Orden.cs \
+obj\Debug\net8.0/OrdenGrpc.cs: ../NorthwindgRPC/Protos/orden.proto

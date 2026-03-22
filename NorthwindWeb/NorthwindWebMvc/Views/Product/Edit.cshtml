@@ -1,0 +1,92 @@
+﻿@model NorthwindWebMvc.Models.Product
+
+@{
+    ViewData["Title"] = "Editar Producto";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-pencil-square"></i> Editar Producto
+                </h4>
+
+                <a asp-action="Index"
+                   class="btn btn-light btn-sm btn-action">
+                    <i class="bi bi-arrow-left"></i> Volver
+                </a>
+            </div>
+
+            <div class="card-body bg-white">
+                <form asp-action="Edit" method="post" class="row g-3 crud-form">
+                    <div class="col-md-6">
+                        <label asp-for="ProductID" class="form-label"></label>
+                        <input asp-for="ProductID" class="form-control" readonly />
+                        <span asp-validation-for="ProductID" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ProductName" class="form-label"></label>
+                        <input asp-for="ProductName" class="form-control" />
+                        <span asp-validation-for="ProductName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="SupplierID" class="form-label"></label>
+                        <select asp-for="SupplierID" asp-items="@ViewBag.Proveedores" class="form-select">
+                            <option value="">-- Seleccione --</option>
+                        </select>
+                        <span asp-validation-for="SupplierID" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="CategoryID" class="form-label"></label>
+                        <select asp-for="CategoryID" asp-items="@ViewBag.Categorias" class="form-select">
+                            <option value="">-- Seleccione --</option>
+                        </select>
+                        <span asp-validation-for="CategoryID" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="QuantityPerUnit" class="form-label"></label>
+                        <input asp-for="QuantityPerUnit" class="form-control" />
+                        <span asp-validation-for="QuantityPerUnit" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="UnitPrice" class="form-label"></label>
+                        <input asp-for="UnitPrice"
+                               class="form-control"
+                               type="number"
+                               step="0.01"
+                               oninvalid="this.setCustomValidity('Ingrese un número válido para el precio unitario')"
+                               oninput="this.setCustomValidity('')" />
+                        <span asp-validation-for="UnitPrice" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="UnitsInStock" class="form-label"></label>
+                        <input asp-for="UnitsInStock" class="form-control" />
+                        <span asp-validation-for="UnitsInStock" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="UnitsOnOrder" class="form-label"></label>
+                        <input asp-for="UnitsOnOrder" class="form-control" />
+                        <span asp-validation-for="UnitsOnOrder" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ReorderLevel" class="form-label"></label>
+                        <input asp-for="ReorderLevel" class="form-control" />
+                        <span asp-validation-for="ReorderLevel" class="text-danger"></span>
+                    </div>
+                    <div class="col-12 mt-4 d-flex justify-content-end">
+                        <button type="submit"
+                                class="btn btn-success btn-crud-primary me-2">
+                            <i class="bi bi-save"></i> Guardar
+                        </button>
+
+                        <a asp-action="Index"
+                           class="btn btn-secondary btn-crud-secondary">
+                            <i class="bi bi-x-circle"></i> Cancelar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

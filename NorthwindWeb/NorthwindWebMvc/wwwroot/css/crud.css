@@ -1,0 +1,253 @@
+﻿/*========== FONDO GENERAL CRUD =========*/
+
+.crud-page {
+    background: #e9f3fb;
+    padding: 2.5rem 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+}
+/*=========== CARD ==========*/
+
+.crud-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #ffffff;
+}
+    /*========== HEADER ==========*/
+
+    .crud-card .card-header {
+        background: linear-gradient(135deg, #0d6efd, #5bc0de);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/*=============== TABLA ================*/
+
+.crud-table {
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    font-size: 0.95rem;
+}
+
+    .crud-table th {
+        background-color: #4e73df;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        padding: 0.75rem;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .crud-table td {
+        background-color: #ffffff;
+        padding: 0.6rem 0.75rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .crud-table tbody tr:hover td {
+        background-color: #e8f0fe;
+        transition: all 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .crud-table tbody tr:hover {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+/*============= BOTONES =============*/
+
+.btn-action {
+    font-weight: 600;
+    padding: 0.45rem 1.1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-crud-primary {
+    background: #4e73df;
+    color: white;
+    border: none;
+}
+
+    .btn-crud-primary:hover {
+        background: #1c45c1;
+    }
+
+.btn-crud-secondary {
+    background: #7c8683;
+    color: white;
+    border: none;
+}
+
+    .btn-crud-secondary:hover {
+        background: #585e5c;
+    }
+
+.btn-light.btn-action:hover {
+    background-color: #dceeff;
+    border-color: #b6d4fe;
+}
+/*================ FORMULARIOS ===============*/
+
+.crud-form .form-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.crud-form .form-control, .crud-form .form-select {
+    border-radius: 12px;
+    border: 1px solid #d1d9e6;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.2s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+}
+
+    .crud-form .form-control:focus, .crud-form .form-select:focus {
+        border-color: #4e73df;
+        box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+    }
+
+.crud-form .text-danger {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+/*================ DETAILS ================*/
+
+.crud-details dt {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 0.75rem;
+}
+
+.crud-details dd {
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+.crud-details .detail-box {
+    background-color: #f8faff;
+    border: 1px solid #dce7f9;
+    border-radius: 12px;
+    padding: 0.65rem 1rem;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+}
+/*================ EFECTO GRADIENTO BTN =============*/
+
+.btn-gradient {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 0.55rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .btn-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+/* Paginación moderna Soft UI */
+
+.pagination {
+    display: flex;
+    gap: 0.4rem;
+}
+
+    .pagination .page-item {
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .pagination .page-item .page-link {
+            color: #0d6efd;
+            background: #f0f7ff;
+            border: 1px solid #d0e4ff;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            min-width: 38px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .pagination .page-item.active .page-link {
+            background: linear-gradient(135deg, #0d6efd, #5bc0de);
+            color: white;
+            border-color: #0d6efd;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #a0aec0;
+            pointer-events: none;
+            background: #f8f9fa;
+        }
+
+        .pagination .page-item:hover:not(.active) .page-link {
+            background: linear-gradient(135deg, #d0e4ff, #a0c8ff);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+/*================ FILTROS ================*/
+
+.crud-filter {
+    background: #f8faff;
+    border: 1px solid #dce7f9;
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    margin: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+}
+
+    .crud-filter .form-control {
+        border-radius: 12px;
+        border: 1px solid #d1d9e6;
+        transition: all 0.2s ease;
+    }
+
+        .crud-filter .form-control:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+        }
+
+    /* Botones del filtro */
+
+    .crud-filter .btn {
+        border-radius: 12px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .crud-filter .btn-primary {
+        background: linear-gradient(135deg, #4e73df, #1cc88a);
+        border: none;
+    }
+
+        .crud-filter .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+    .crud-filter .btn-secondary {
+        background: #7c8683;
+        border: none;
+    }
+
+        .crud-filter .btn-secondary:hover {
+            background: #585e5c;
+        }
+
+.crud-total {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: 600;
+}

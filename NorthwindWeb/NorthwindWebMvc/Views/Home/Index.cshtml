@@ -1,0 +1,177 @@
+﻿@model NorthwindWebMvc.Models.Home
+
+@{
+    ViewData["Title"] = "Northwind Management";
+}
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container">
+        <h1>Bienvenido a <span style="color:#0056b3;">Northwind Management</span></h1>
+        <p>Gestiona tus productos, clientes, transportistas y más, desde un entorno moderno y eficiente.</p>
+        <p class="lead mt-4 text-secondary">
+            Northwind Management te permite optimizar la administración de inventarios y recursos con facilidad,
+            seguridad y estilo.
+        </p>
+    </div>
+</section>
+
+<!-- ===== CONTADORES ===== -->
+<div class="container stats text-center my-5">
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm py-4">
+                <h3 class="counter">@Model.TotalProductos</h3>
+                <p>Productos</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm py-4">
+                <h3 class="counter">@Model.TotalClientes</h3>
+                <p>Clientes</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm py-4">
+                <h3 class="counter">@Model.TotalTransportistas</h3>
+                <p>Transportistas</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm py-4">
+                <h3 class="counter">@Model.TotalProveedores</h3>
+                <p>Proveedores</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== GRÁFICOS ===== -->
+<div class="container my-5">
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">Distribución general</h5>
+                <div class="chart-container">
+                    <canvas id="graficoDona"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">Totales por entidad</h5>
+                <div class="chart-container">
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ===== CHART.JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const totales = {
+        productos: @Model.TotalProductos,
+        clientes: @Model.TotalClientes,
+        transportistas: @Model.TotalTransportistas,
+        proveedores: @Model.TotalProveedores
+    };
+
+    const valores = [
+        totales.productos,
+        totales.clientes,
+        totales.transportistas,
+        totales.proveedores
+    ];
+
+    const coloresGraficos = [
+        '#2563eb', // azul intenso
+        '#0ea5e9', // celeste
+        '#6366f1', // índigo
+        '#64748b'  // gris azulado
+    ];
+
+    new Chart(document.getElementById('graficoDona'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Productos', 'Clientes', 'Transportistas', 'Proveedores'],
+            datasets: [{
+                data: valores,
+                backgroundColor: coloresGraficos
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+
+    new Chart(document.getElementById('graficoBarras'), {
+        type: 'bar',
+        data: {
+            labels: ['Productos', 'Clientes', 'Transportistas', 'Proveedores'],
+            datasets: [{
+                label: 'Oculto',
+                data: valores,
+                backgroundColor: coloresGraficos
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+        },
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+
+    function obtenerClaseColor(valor) {
+        if (valor >= 50) return 'text-success'; // verde
+        if (valor >= 20) return 'text-warning'; // amarillo
+        return 'text-danger';                   // rojo
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".counter").forEach(counter => {
+            const target = +counter.innerText;
+            counter.innerText = "0";
+
+            // aplicar color según valor final
+            counter.classList.add(obtenerClaseColor(target));
+
+            const step = target / 60;
+
+            const update = () => {
+                let value = +counter.innerText;
+                if (value < target) {
+                    counter.innerText = Math.ceil(value + step);
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            update();
+        });
+    });
+</script>

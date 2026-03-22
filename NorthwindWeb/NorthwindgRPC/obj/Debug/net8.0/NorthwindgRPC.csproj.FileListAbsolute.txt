@@ -1,0 +1,484 @@
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+E:\Cursos de Cibertec\Cursos del 5to Ciclo\Desarrollo de Servicios Web I\POR TERMINAR\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+C:\Users\yuliana\Documents\documentos\ADS\NorthwindWeb (2)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+C:\Users\carlo\Downloads\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+C:\Users\Josue\Documents\Desarrollo de Servicios Web\GIANBASE\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+C:\Users\Guillermo\Downloads\NorthwindWeb (1)\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\appsettings.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.staticwebassets.endpoints.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.exe
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.deps.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.runtimeconfig.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.AssemblyReference.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfoInputs.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.AssemblyInfo.cs
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.csproj.CoreCompileInputs.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\scopedcss\bundle\NorthwindgRPC.styles.css
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\Northwin.37E66614.Up2Date
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\refint\NorthwindgRPC.dll
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.pdb
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\NorthwindgRPC.genruntimeconfig.cache
+C:\Users\yuliana\Desktop\5TO CICLO\DSW\EF_3\EF_3\NorthwindWeb\NorthwindgRPC\obj\Debug\net8.0\ref\NorthwindgRPC.dll
