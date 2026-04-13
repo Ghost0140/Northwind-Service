@@ -1,4 +1,4 @@
-﻿@model IEnumerable<NorthwindWebMvc.Models.Order>
+﻿@model NorthwindWebMvc.Models.PagedList<NorthwindWebMvc.Models.Order>
 
 @{
     ViewData["Title"] = "Pedidos por Cliente";
@@ -21,7 +21,7 @@
             </div>
 
             <!-- FILTRO -->
-            <form asp-action="FindByCustomer" method="post" class="crud-filter row g-2 mb-2">
+            <form asp-action="FindByCustomer" method="get" class="crud-filter row g-2 mb-2">
                 <div class="col-md-4">
                     <input type="text"
                            name="customerID"
@@ -49,7 +49,7 @@
             <div class="card-body bg-white">
                 <div class="d-flex justify-content-end mb-2 crud-total">
                     <span class="text-muted fw-semibold">
-                        Total de registros mostrados: @Model.Count()
+                        Total de registros mostrados: @Model.TotalItems
                     </span>
                 </div>
 
@@ -57,16 +57,16 @@
                     <table class="table table-hover align-middle text-center crud-table">
                         <thead>
                             <tr>
-                                <th>@Html.DisplayNameFor(m => m.First().OrderID)</th>
-                                <th>@Html.DisplayNameFor(m => m.First().CompanyName)</th>
-                                <th>@Html.DisplayNameFor(m => m.First().OrderDate)</th>
-                                <th>@Html.DisplayNameFor(m => m.First().RequiredDate)</th>
-                                <th>@Html.DisplayNameFor(m => m.First().ShippedDate)</th>
-                                <th>@Html.DisplayNameFor(m => m.First().ShipCountry)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().OrderID)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().CompanyName)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().OrderDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().RequiredDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().ShippedDate)</th>
+                                <th>@Html.DisplayNameFor(m => m.Items.First().ShipCountry)</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @if (!Model.Any())
+                            @if (!Model.Items.Any())
                             {
                                 <tr>
                                     <td colspan="6" class="text-muted py-3">
@@ -76,7 +76,7 @@
                             }
                             else
                             {
-                                foreach (var item in Model)
+                                foreach (var item in Model.Items)
                                 {
                                     <tr>
                                         <td>@item.OrderID</td>
@@ -92,6 +92,52 @@
                     </table>
                 </div>
             </div>
+            <nav aria-label="Page navigation" class="mt-3">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                        <a class="page-link" asp-action="FindByCustomer" asp-route-page="@(Model.PageNumber - 1)" asp-route-customerID="@ViewBag.CustomerID">Anterior</a>
+                    </li>
+
+                    @{
+                        int start = Math.Max(1, Model.PageNumber - 3);
+                        int end = Math.Min(Model.TotalPages, Model.PageNumber + 3);
+                        if (start > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="FindByCustomer" asp-route-page="1" asp-route-customerID="@ViewBag.CustomerID">1</a>
+                            </li>
+                            if (start > 2)
+                            {
+                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                            }
+                        }
+
+                        for (int i = start; i <= end; i++)
+                        {
+                            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                <a class="page-link" asp-action="FindByCustomer" asp-route-page="@i" asp-route-customerID="@ViewBag.CustomerID">@i</a>
+                            </li>
+                        }
+
+                        if (end < Model.TotalPages)
+                        {
+                            if (end < Model.TotalPages - 1)
+                            {
+                                <li class="page-item disabled"><span class="page-link">...</span></li>
+                            }
+                            <li class="page-item">
+                                <a class="page-link" asp-action="FindByCustomer" asp-route-page="@Model.TotalPages" asp-route-customerID="@ViewBag.CustomerID">@Model.TotalPages</a>
+                            </li>
+                        }
+                    }
+
+                    <li class="page-item @(Model.PageNumber == Model.TotalPages ? "disabled" : "")">
+                        <a class="page-link" asp-action="FindByCustomer" asp-route-page="@(Model.PageNumber + 1)" asp-route-customerID="@ViewBag.CustomerID">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
+
+
