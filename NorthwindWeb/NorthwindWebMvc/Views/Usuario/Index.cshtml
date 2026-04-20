@@ -25,6 +25,7 @@
                         <th>Clave</th>
                         <th>Rol</th>
                         <th>Estado</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,21 @@
                             <td>@item.Clave</td>
                             <td>@item.Rol</td>
                             <td>@(item.Estado ? "Activo" : "Inactivo")</td>
+                            <td>
+                                @if (Context.Session.GetString("rol") == "Admin")
+                                {
+                                    <a asp-action="Edit" asp-route-id="@item.IdUsuario"
+                                       class="btn btn-warning btn-sm">
+                                        ✏️
+                                    </a>
+
+                                    <a asp-action="Delete" asp-route-id="@item.IdUsuario"
+                                       class="btn btn-danger btn-sm"
+                                       onclick="return confirm('¿Eliminar usuario?')">
+                                        🗑️
+                                    </a>
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>

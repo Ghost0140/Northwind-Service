@@ -35,5 +35,26 @@ namespace NorthwindWebApi.Controllers
             var mensaje = _usuarioDAO.RegistrarUsuario(usuario);
             return Ok(mensaje);
         }
+
+        [HttpDelete("eliminar/{id}")]
+        public IActionResult Eliminar(int id)
+        {
+            var mensaje = _usuarioDAO.EliminarUsuario(id);
+            return Ok(mensaje);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Obtener(int id)
+        {
+            var usuario = _usuarioDAO.ObtenerUsuario(id);
+            return Ok(usuario);
+        }
+
+        [HttpPut("actualizar")]
+        public IActionResult Actualizar([FromBody] Usuario usuario)
+        {
+            var mensaje = _usuarioDAO.ActualizarUsuario(usuario);
+            return Ok(mensaje);
+        }
     }
 }

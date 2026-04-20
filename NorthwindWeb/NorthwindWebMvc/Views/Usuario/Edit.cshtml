@@ -1,0 +1,41 @@
+﻿@model NorthwindWebMvc.Models.Usuario
+
+<div class="container mt-4">
+    <div class="card shadow rounded-4">
+        <div class="card-header bg-warning text-dark">
+            <h3>Editar Usuario</h3>
+        </div>
+        <div class="card-body">
+
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="IdUsuario" />
+
+                <div class="mb-3">
+                    <label>Usuario</label>
+                    <input asp-for="NombreUsuario" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Clave</label>
+                    <input asp-for="Clave" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Rol</label>
+                    <select asp-for="Rol" class="form-select">
+                        <option value="Admin">Admin</option>
+                        <option value="Usuario">Usuario</option>
+                    </select>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input asp-for="Estado" class="form-check-input" />
+                    <label class="form-check-label">Activo</label>
+                </div>
+
+                <button class="btn btn-warning">Actualizar</button>
+                <a asp-action="Index" class="btn btn-secondary">Volver</a>
+            </form>
+        </div>
+    </div>
+</div>

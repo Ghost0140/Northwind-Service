@@ -65,7 +65,7 @@ namespace NorthwindWebApi.Repositorio.DAO
 
                 string sql = @"SELECT IdUsuario, NombreUsuario, Clave, Rol, Estado
                                FROM Usuarios
-                               ORDER BY IdUsuario DESC";
+                               ORDER BY IdUsuario ASC";
 
                 using (SqlCommand cmd = new SqlCommand(sql, cn))
                 using (SqlDataReader dr = cmd.ExecuteReader())
@@ -110,6 +110,97 @@ namespace NorthwindWebApi.Repositorio.DAO
 
                     if (filas > 0)
                         mensaje = "Usuario registrado correctamente";
+                }
+            }
+
+            return mensaje;
+        }
+
+        public string EliminarUsuario(int id)
+        {
+            string mensaje = "Error al eliminar usuario";
+            string cadena = _configuration.GetConnectionString("sql");
+
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+
+                string sql = "UPDATE Usuarios SET Estado = 0 WHERE IdUsuario = @Id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+
+                    int filas = cmd.ExecuteNonQuery();
+
+                    if (filas > 0)
+                        mensaje = "Usuario eliminado correctamente";
+                }
+            }
+
+            return mensaje;
+        }
+
+        public Usuario ObtenerUsuario(int id)
+        {
+            Usuario usuario = new Usuario();
+            string cadena = _configuration.GetConnectionString("sql");
+
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+
+                string sql = @"SELECT IdUsuario, NombreUsuario, Clave, Rol, Estado
+                       FROM Usuarios WHERE IdUsuario = @Id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            usuario.IdUsuario = Convert.ToInt32(dr["IdUsuario"]);
+                            usuario.NombreUsuario = dr["NombreUsuario"].ToString();
+                            usuario.Clave = dr["Clave"].ToString();
+                            usuario.Rol = dr["Rol"].ToString();
+                            usuario.Estado = Convert.ToBoolean(dr["Estado"]);
+                        }
+                    }
+                }
+            }
+
+            return usuario;
+        }
+
+        public string ActualizarUsuario(Usuario usuario)
+        {
+            string mensaje = "Error al actualizar";
+            string cadena = _configuration.GetConnectionString("sql");
+
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+
+                string sql = @"UPDATE Usuarios 
+                       SET NombreUsuario=@NombreUsuario,
+                           Clave=@Clave,
+                           Rol=@Rol,
+                           Estado=@Estado
+                       WHERE IdUsuario=@Id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.AddWithValue("@NombreUsuario", usuario.NombreUsuario);
+                    cmd.Parameters.AddWithValue("@Clave", usuario.Clave);
+                    cmd.Parameters.AddWithValue("@Rol", usuario.Rol);
+                    cmd.Parameters.AddWithValue("@Estado", usuario.Estado);
+                    cmd.Parameters.AddWithValue("@Id", usuario.IdUsuario);
+
+                    int filas = cmd.ExecuteNonQuery();
+                    if (filas > 0)
+                        mensaje = "Usuario actualizado correctamente";
                 }
             }
 

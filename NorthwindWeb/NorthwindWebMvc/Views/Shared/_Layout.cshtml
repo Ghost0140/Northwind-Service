@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="~/css/crud.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home/index.css" asp-append-version="true" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
             <div class="container">
@@ -81,12 +81,12 @@
     </header>
 
     <div>
-        <main role="main">
+        <main role="main" class="flex-grow-1">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="text-center">
+    <footer class="text-center mt-auto py-3 bg-dark text-white">
         <div class="container">
             <div class="social-icons mb-3">
                 <a href="#"><i class="bi bi-facebook"></i></a>
