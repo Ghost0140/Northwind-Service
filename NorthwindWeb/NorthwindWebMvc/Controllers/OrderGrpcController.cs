@@ -13,15 +13,14 @@ namespace NorthwindWebMvc.Controllers
 
 
 
-        public async Task<IActionResult> FindByCustomer()
+        public async Task<IActionResult> FindByCustomer(string customerID = "", int page = 1, int pageSize = 10)
         {
             var canal = GrpcChannel.ForAddress("https://localhost:7075");
             _client = new Orders.OrdersClient(canal);
 
-            // CustomerID vacío → listar todos
             var request = new CustomerFilter
             {
-                CustomerID = ""
+                CustomerID = customerID
             };
 
             OrdenResponse mensaje = await _client.GetByCustomerAsync(request);
@@ -44,42 +43,23 @@ namespace NorthwindWebMvc.Controllers
                 });
             }
 
-            return View(temporal);
+            ViewBag.CustomerID = customerID;
+
+            var paged = new PagedList<Order>
+            {
+                Items = temporal.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                PageNumber = page,
+                PageSize = pageSize,
+                TotalItems = temporal.Count
+            };
+
+            return View(paged);
         }
 
         [HttpPost]
-        public async Task<IActionResult> FindByCustomer(string customerID)
+        public IActionResult FindByCustomer(string customerID)
         {
-            var canal = GrpcChannel.ForAddress("https://localhost:7075");
-            _client = new Orders.OrdersClient(canal);
-
-            var request = new CustomerFilter
-            {
-                CustomerID = customerID
-            };
-
-            OrdenResponse mensaje = await _client.GetByCustomerAsync(request);
-
-            List<Order> temporal = new List<Order>();
-
-            foreach (Orden reg in mensaje.Items)
-            {
-                temporal.Add(new Order()
-                {
-                    OrderID = reg.OrderID,
-                    CustomerID = reg.CustomerID,
-                    CompanyName = reg.CompanyName,
-                    OrderDate = reg.OrderDate,
-                    RequiredDate = reg.RequiredDate,
-                    ShippedDate = reg.ShippedDate,
-                    ShipName = reg.ShipName,
-                    ShipCity = reg.ShipCity,
-                    ShipCountry = reg.ShipCountry
-                });
-            }
-
-            ViewBag.CustomerID = customerID;
-            return View(temporal);
+            return RedirectToAction("FindByCustomer", new { customerID = customerID });
         }
 
 
@@ -87,15 +67,55 @@ namespace NorthwindWebMvc.Controllers
 
 
 
-        public async Task<IActionResult> BetweenDates()
+        public async Task<IActionResult> BetweenDates(string? fechaInicio, string? fechaFin, int page = 1, int pageSize = 10)
         {
             var canal = GrpcChannel.ForAddress("https://localhost:7075");
             _client = new Orders.OrdersClient(canal);
 
+            DateTime startDate;
+            DateTime endDate;
+
+            // If no dates provided, query full range but keep inputs empty
+            if (string.IsNullOrWhiteSpace(fechaInicio) || string.IsNullOrWhiteSpace(fechaFin))
+            {
+                // If there was an error from a previous POST, expose it
+                if (TempData["Error"] != null)
+                {
+                    ViewBag.Error = TempData["Error"].ToString();
+                }
+
+                startDate = new DateTime(1996, 1, 1);
+                endDate = DateTime.Today;
+                ViewBag.FechaInicio = null; // keep inputs empty
+                ViewBag.FechaFin = null;
+            }
+            else
+            {
+                // Expecting yyyy-MM-dd from input type=date
+                if (!DateTime.TryParse(fechaInicio, out startDate) || !DateTime.TryParse(fechaFin, out endDate))
+                {
+                    ViewBag.Error = "Formato de fecha inválido.";
+                    ViewBag.FechaInicio = fechaInicio;
+                    ViewBag.FechaFin = fechaFin;
+                    return View(new PagedList<Order> { Items = new List<Order>(), PageNumber = 1, PageSize = pageSize, TotalItems = 0 });
+                }
+
+                if (startDate > endDate)
+                {
+                    ViewBag.Error = "La fecha de inicio no puede ser mayor a la fecha fin.";
+                    ViewBag.FechaInicio = fechaInicio;
+                    ViewBag.FechaFin = fechaFin;
+                    return View(new PagedList<Order> { Items = new List<Order>(), PageNumber = 1, PageSize = pageSize, TotalItems = 0 });
+                }
+
+                ViewBag.FechaInicio = startDate.ToString("yyyy-MM-dd");
+                ViewBag.FechaFin = endDate.ToString("yyyy-MM-dd");
+            }
+
             var request = new DateFilter
             {
-                FechaInicio = "01-01-1996",
-                FechaFin = DateTime.Today.ToString("dd-MM-yyyy")
+                FechaInicio = startDate.ToString("dd-MM-yyyy"),
+                FechaFin = endDate.ToString("dd-MM-yyyy")
             };
 
             var response = await _client.GetBetweenDatesAsync(request);
@@ -113,21 +133,26 @@ namespace NorthwindWebMvc.Controllers
                 ShipCountry = reg.ShipCountry
             }).ToList();
 
-            ViewBag.FechaInicio = request.FechaInicio;
-            ViewBag.FechaFin = request.FechaFin;
+            var paged = new PagedList<Order>
+            {
+                Items = lista.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                PageNumber = page,
+                PageSize = pageSize,
+                TotalItems = lista.Count
+            };
 
-            return View(lista);
+            return View(paged);
         }
 
 
 
         [HttpPost]
-        public async Task<IActionResult> BetweenDates(DateTime? fechaInicio, DateTime? fechaFin)
+        public async Task<IActionResult> BetweenDates(DateTime? fechaInicio, DateTime? fechaFin, int page = 1, int pageSize = 10)
         {
             if (!fechaInicio.HasValue || !fechaFin.HasValue)
             {
                 ViewBag.Error = "Digite una fecha de inicio y fin.";
-                return View(new List<Order>());
+                return View(new PagedList<Order> { Items = new List<Order>(), PageNumber = 1, PageSize = pageSize, TotalItems = 0 });
             }
 
             if (fechaInicio > fechaFin)
@@ -163,7 +188,15 @@ namespace NorthwindWebMvc.Controllers
             ViewBag.FechaInicio = request.FechaInicio;
             ViewBag.FechaFin = request.FechaFin;
 
-            return View(lista);
+            var paged = new PagedList<Order>
+            {
+                Items = lista.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                PageNumber = page,
+                PageSize = pageSize,
+                TotalItems = lista.Count
+            };
+
+            return View(paged);
         }
 
 
