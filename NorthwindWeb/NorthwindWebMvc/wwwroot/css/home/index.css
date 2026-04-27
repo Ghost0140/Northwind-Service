@@ -1,61 +1,69 @@
-/* HERO SECTION */
-.hero {
-    background: linear-gradient(to right, #e8f0fe, #f8fbff);
-    padding: 80px 20px;
-    text-align: center;
+.dashboard-page {
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+    min-height: calc(100vh - 140px);
 }
 
-    .hero h1 {
-        color: #0078d4;
-        font-weight: 800;
-        font-size: 2.8rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-        color: #555;
-    }
-
-/* STATS SECTION */
-.stats {
-    margin: 60px auto;
+.dashboard-hero {
+    background: linear-gradient(120deg, #0f172a, #1d4ed8);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-    .stats .card {
-        border: none;
-        border-radius: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease;
-    }
+.dashboard-card,
+.kpi-card {
+    border: 0;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
 
-        .stats .card:hover {
-            transform: translateY(-8px);
-        }
+.dashboard-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .stats h3 {
-        color: #0078d4;
-        font-size: 2rem;
-        font-weight: 700;
-    }
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
 
-    .stats p {
-        color: #777;
-        font-weight: 500;
-    }
+.kpi-card {
+    padding: 1rem 1.1rem;
+}
+
+.kpi-title {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
+.kpi-sub {
+    color: #475569;
+    font-size: 0.9rem;
+}
 
 .counter {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease-out;
+    color: #0f172a;
+    font-size: 2rem;
+    font-weight: 800;
 }
-
-    .counter.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
 
 .chart-container {
     aspect-ratio: 16 / 9;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .counter {
+        font-size: 1.6rem;
+    }
 }
 

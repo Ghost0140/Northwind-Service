@@ -1,177 +1,250 @@
 ﻿@model NorthwindWebMvc.Models.Home
 
 @{
-    ViewData["Title"] = "Northwind Management";
+    ViewData["Title"] = "Dashboard Admin";
+    var totalGeneral = Model.TotalProductos + Model.TotalClientes + Model.TotalTransportistas + Model.TotalProveedores;
 }
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-    <div class="container">
-        <h1>Bienvenido a <span style="color:#0056b3;">Northwind Management</span></h1>
-        <p>Gestiona tus productos, clientes, transportistas y más, desde un entorno moderno y eficiente.</p>
-        <p class="lead mt-4 text-secondary">
-            Northwind Management te permite optimizar la administración de inventarios y recursos con facilidad,
-            seguridad y estilo.
-        </p>
-    </div>
-</section>
-
-<!-- ===== CONTADORES ===== -->
-<div class="container stats text-center my-5">
-    <div class="row g-4">
-
-        <div class="col-md-3">
-            <div class="card shadow-sm py-4">
-                <h3 class="counter">@Model.TotalProductos</h3>
-                <p>Productos</p>
+<div class="dashboard-page">
+    <div class="container py-4">
+        <section class="dashboard-hero mb-4">
+            <div>
+                <h1 class="h3 mb-1">Dashboard Administrativo</h1>
+                <p class="mb-0 text-light-emphasis">Visión general de entidades clave del sistema Northwind.</p>
             </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm py-4">
-                <h3 class="counter">@Model.TotalClientes</h3>
-                <p>Clientes</p>
+            <div class="text-md-end">
+                <p class="mb-1 small text-uppercase fw-semibold text-light-emphasis">Total Registros</p>
+                <h2 class="mb-0">@totalGeneral</h2>
             </div>
-        </div>
+        </section>
 
-        <div class="col-md-3">
-            <div class="card shadow-sm py-4">
-                <h3 class="counter">@Model.TotalTransportistas</h3>
-                <p>Transportistas</p>
+        <section class="row g-3 mb-4">
+            <div class="col-md-6 col-xl-3">
+                <article class="kpi-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="kpi-title">Productos</p>
+                            <h3 class="counter mb-1">@Model.TotalProductos</h3>
+                        </div>
+                        <i class="bi bi-box-seam fs-4 text-primary"></i>
+                    </div>
+                    <p class="kpi-sub mb-0">Participación: <strong id="pctProductos">0%</strong></p>
+                </article>
             </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm py-4">
-                <h3 class="counter">@Model.TotalProveedores</h3>
-                <p>Proveedores</p>
+            <div class="col-md-6 col-xl-3">
+                <article class="kpi-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="kpi-title">Clientes</p>
+                            <h3 class="counter mb-1">@Model.TotalClientes</h3>
+                        </div>
+                        <i class="bi bi-people fs-4 text-info"></i>
+                    </div>
+                    <p class="kpi-sub mb-0">Participación: <strong id="pctClientes">0%</strong></p>
+                </article>
             </div>
-        </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="kpi-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="kpi-title">Transportistas</p>
+                            <h3 class="counter mb-1">@Model.TotalTransportistas</h3>
+                        </div>
+                        <i class="bi bi-truck fs-4 text-success"></i>
+                    </div>
+                    <p class="kpi-sub mb-0">Participación: <strong id="pctTransportistas">0%</strong></p>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="kpi-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="kpi-title">Proveedores</p>
+                            <h3 class="counter mb-1">@Model.TotalProveedores</h3>
+                        </div>
+                        <i class="bi bi-building fs-4 text-secondary"></i>
+                    </div>
+                    <p class="kpi-sub mb-0">Participación: <strong id="pctProveedores">0%</strong></p>
+                </article>
+            </div>
+        </section>
 
+        <section class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <h5 class="mb-3">Distribución General</h5>
+                    <div class="chart-container">
+                        <canvas id="graficoDona"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <h5 class="mb-3">Comparativo por Entidad</h5>
+                    <div class="chart-container">
+                        <canvas id="graficoBarras"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <h5 class="mb-3">Radar de Cobertura</h5>
+                    <div class="chart-container">
+                        <canvas id="graficoRadar"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <h5 class="mb-3">Peso Relativo</h5>
+                    <div class="chart-container">
+                        <canvas id="graficoPolar"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4">
+            <div class="col-lg-7">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Resumen Ejecutivo</h5>
+                        <span class="badge text-bg-primary">Actual</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Entidad</th>
+                                    <th class="text-end">Total</th>
+                                    <th class="text-end">Participación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Productos</td>
+                                    <td class="text-end">@Model.TotalProductos</td>
+                                    <td class="text-end" id="rowPctProductos">0%</td>
+                                </tr>
+                                <tr>
+                                    <td>Clientes</td>
+                                    <td class="text-end">@Model.TotalClientes</td>
+                                    <td class="text-end" id="rowPctClientes">0%</td>
+                                </tr>
+                                <tr>
+                                    <td>Transportistas</td>
+                                    <td class="text-end">@Model.TotalTransportistas</td>
+                                    <td class="text-end" id="rowPctTransportistas">0%</td>
+                                </tr>
+                                <tr>
+                                    <td>Proveedores</td>
+                                    <td class="text-end">@Model.TotalProveedores</td>
+                                    <td class="text-end" id="rowPctProveedores">0%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="dashboard-card p-3 p-md-4 h-100">
+                    <h5 class="mb-3">Accesos Rápidos</h5>
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-outline-primary" asp-controller="Product" asp-action="Index"><i class="bi bi-box-seam me-2"></i>Administrar Productos</a>
+                        <a class="btn btn-outline-primary" asp-controller="Customer" asp-action="Index"><i class="bi bi-people me-2"></i>Administrar Clientes</a>
+                        <a class="btn btn-outline-primary" asp-controller="Supplier" asp-action="Index"><i class="bi bi-building me-2"></i>Administrar Proveedores</a>
+                        <a class="btn btn-outline-primary" asp-controller="Shipper" asp-action="Index"><i class="bi bi-truck me-2"></i>Administrar Transportistas</a>
+                        <a class="btn btn-outline-primary" asp-controller="Usuario" asp-action="Index"><i class="bi bi-person-gear me-2"></i>Gestión de Usuarios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 
-<!-- ===== GRÁFICOS ===== -->
-<div class="container my-5">
-    <div class="row g-4">
-
-        <div class="col-md-6">
-            <div class="card shadow-sm p-4 h-100">
-                <h5 class="text-center mb-3">Distribución general</h5>
-                <div class="chart-container">
-                    <canvas id="graficoDona"></canvas>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm p-4 h-100">
-                <h5 class="text-center mb-3">Totales por entidad</h5>
-                <div class="chart-container">
-                    <canvas id="graficoBarras"></canvas>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-<!-- ===== CHART.JS ===== -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <script>
-    const totales = {
-        productos: @Model.TotalProductos,
-        clientes: @Model.TotalClientes,
-        transportistas: @Model.TotalTransportistas,
-        proveedores: @Model.TotalProveedores
+    const labels = ['Productos', 'Clientes', 'Transportistas', 'Proveedores'];
+    const valores = [@Model.TotalProductos, @Model.TotalClientes, @Model.TotalTransportistas, @Model.TotalProveedores];
+    const total = valores.reduce((acc, value) => acc + value, 0);
+    const colores = ['#2563eb', '#0ea5e9', '#16a34a', '#64748b'];
+
+    function porcentaje(valor) {
+        if (total === 0) return '0.0%';
+        return `${((valor * 100) / total).toFixed(1)}%`;
+    }
+
+    document.getElementById('pctProductos').textContent = porcentaje(valores[0]);
+    document.getElementById('pctClientes').textContent = porcentaje(valores[1]);
+    document.getElementById('pctTransportistas').textContent = porcentaje(valores[2]);
+    document.getElementById('pctProveedores').textContent = porcentaje(valores[3]);
+    document.getElementById('rowPctProductos').textContent = porcentaje(valores[0]);
+    document.getElementById('rowPctClientes').textContent = porcentaje(valores[1]);
+    document.getElementById('rowPctTransportistas').textContent = porcentaje(valores[2]);
+    document.getElementById('rowPctProveedores').textContent = porcentaje(valores[3]);
+
+    document.querySelectorAll('.counter').forEach(counter => {
+        const target = Number(counter.innerText);
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        counter.innerText = '0';
+
+        const tick = () => {
+            current += step;
+            if (current < target) {
+                counter.innerText = String(current);
+                requestAnimationFrame(tick);
+            } else {
+                counter.innerText = String(target);
+            }
+        };
+        tick();
+    });
+
+    const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' } }
     };
-
-    const valores = [
-        totales.productos,
-        totales.clientes,
-        totales.transportistas,
-        totales.proveedores
-    ];
-
-    const coloresGraficos = [
-        '#2563eb', // azul intenso
-        '#0ea5e9', // celeste
-        '#6366f1', // índigo
-        '#64748b'  // gris azulado
-    ];
 
     new Chart(document.getElementById('graficoDona'), {
         type: 'doughnut',
-        data: {
-            labels: ['Productos', 'Clientes', 'Transportistas', 'Proveedores'],
-            datasets: [{
-                data: valores,
-                backgroundColor: coloresGraficos
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: { position: 'bottom' }
-            }
-        }
+        data: { labels, datasets: [{ data: valores, backgroundColor: colores, borderWidth: 0 }] },
+        options: commonOptions
     });
-
 
     new Chart(document.getElementById('graficoBarras'), {
         type: 'bar',
-        data: {
-            labels: ['Productos', 'Clientes', 'Transportistas', 'Proveedores'],
-            datasets: [{
-                label: 'Oculto',
-                data: valores,
-                backgroundColor: coloresGraficos
-            }]
-        },
+        data: { labels, datasets: [{ data: valores, backgroundColor: colores, borderRadius: 8 }] },
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: false
-                }
-        },
-            scales: {
-                y: { beginAtZero: true }
-            }
+            ...commonOptions,
+            plugins: { legend: { display: false } },
+            scales: { y: { beginAtZero: true } }
         }
     });
 
-    function obtenerClaseColor(valor) {
-        if (valor >= 50) return 'text-success'; // verde
-        if (valor >= 20) return 'text-warning'; // amarillo
-        return 'text-danger';                   // rojo
-    }
+    new Chart(document.getElementById('graficoRadar'), {
+        type: 'radar',
+        data: {
+            labels,
+            datasets: [{
+                label: 'Cobertura',
+                data: valores,
+                fill: true,
+                backgroundColor: 'rgba(37, 99, 235, 0.18)',
+                borderColor: '#2563eb',
+                pointBackgroundColor: '#0ea5e9'
+            }]
+        },
+        options: commonOptions
+    });
 
-    document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".counter").forEach(counter => {
-            const target = +counter.innerText;
-            counter.innerText = "0";
-
-            // aplicar color según valor final
-            counter.classList.add(obtenerClaseColor(target));
-
-            const step = target / 60;
-
-            const update = () => {
-                let value = +counter.innerText;
-                if (value < target) {
-                    counter.innerText = Math.ceil(value + step);
-                    requestAnimationFrame(update);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-
-            update();
-        });
+    new Chart(document.getElementById('graficoPolar'), {
+        type: 'polarArea',
+        data: { labels, datasets: [{ data: valores, backgroundColor: colores }] },
+        options: commonOptions
     });
 </script>
