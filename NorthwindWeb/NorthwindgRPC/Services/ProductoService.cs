@@ -13,8 +13,11 @@ namespace NorthwindgRPC
             _logger = logger;
         }
 
-        string cadena = "server=.;database=Northwind; trusted_Connection=true;" +
-            "MultipleActiveResultSets=true; TrustServerCertificate=false; Encrypt=false";
+        /*string cadena = "server=.;database=Northwind; trusted_Connection=true;" +
+            "MultipleActiveResultSets=true; TrustServerCertificate=false; Encrypt=false";*/
+        
+        string cadena = "server=DESKTOP-S5DI9FR\\SQLEXPRESS;database=Northwind; trusted_Connection=true;" +
+        "MultipleActiveResultSets=true; TrustServerCertificate=false; Encrypt=false";
 
         List<Producto> Lista()
         {
