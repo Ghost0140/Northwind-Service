@@ -1,0 +1,112 @@
+@model NorthwindWebMvc.Models.StoreViewModels.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="store-page">
+    <div class="container">
+        <div class="store-hero">
+            <h1 class="h3 mb-0">Confirmar Pedido</h1>
+        </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="ProcessCheckout" method="post" class="needs-validation">
+                <div class="card store-soft-card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Información de Entrega</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Nombre Completo</label>
+                            <input type="text" id="customerName" asp-for="CustomerName" class="form-control" required>
+                            <span asp-validation-for="CustomerName" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="customerEmail" asp-for="CustomerEmail" class="form-control" required>
+                            <span asp-validation-for="CustomerEmail" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="shippingAddress" class="form-label">Dirección de Entrega</label>
+                            <textarea id="shippingAddress" asp-for="ShippingAddress" class="form-control" rows="3" required></textarea>
+                            <span asp-validation-for="ShippingAddress" class="text-danger small"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card store-soft-card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Productos en el Pedido</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-sm mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Producto</th>
+                                    <th class="text-end">Precio</th>
+                                    <th class="text-center">Cantidad</th>
+                                    <th class="text-end">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td>@item.ProductName</td>
+                                        <td class="text-end">$@item.UnitPrice.ToString("F2")</td>
+                                        <td class="text-center">@item.Quantity</td>
+                                        <td class="text-end">$@item.SubTotal.ToString("F2")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-start">
+                        <a asp-action="Cart" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver al Carrito
+                        </a>
+                    </div>
+                    <div class="col text-end">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="bi bi-check-circle"></i> Confirmar Pedido
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card store-soft-card store-sticky">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Resumen</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        @foreach (var item in Model.Items)
+                        {
+                            <li class="d-flex justify-content-between mb-2">
+                                <span>@item.ProductName (x@item.Quantity)</span>
+                                <span>$@item.SubTotal.ToString("F2")</span>
+                            </li>
+                        }
+                    </ul>
+                    <hr />
+                    <div class="d-flex justify-content-between h5">
+                        <span>Total:</span>
+                        <span class="text-success">$@Model.Total.ToString("F2")</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

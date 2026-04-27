@@ -1,0 +1,125 @@
+@model NorthwindWebMvc.Models.Product
+
+@{
+    ViewData["Title"] = Model?.ProductName ?? "Detalle del Producto";
+}
+
+<div class="store-page">
+    <div class="container">
+        <div class="d-flex gap-2 mb-3">
+            <a asp-action="Catalog" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Volver al Catálogo
+            </a>
+            <a asp-action="Cart" class="btn btn-primary">
+                <i class="bi bi-cart"></i> Ver Carrito
+            </a>
+        </div>
+
+        @if (TempData["mensaje"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle me-1"></i> @TempData["mensaje"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+
+        @if (Model != null)
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card store-soft-card">
+                        <div class="card-body">
+                        <h1 class="card-title mb-4">@Model.ProductName</h1>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Categoría</label>
+                                    <p>@Model.CategoryName</p>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Proveedor</label>
+                                    <p>@Model.SupplierName</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Precio Unitario</label>
+                                    <p class="store-price">$@Model.UnitPrice?.ToString("F2")</p>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Stock Disponible</label>
+                                    <p>
+                                        @if (Model.UnitsInStock > 0)
+                                        {
+                                            <span class="badge bg-success">@Model.UnitsInStock unidades</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">Agotado</span>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Cantidad por Unidad</label>
+                                    <p>@Model.QuantityPerUnit</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Unidades en Pedido</label>
+                                    <p>@Model.UnitsOnOrder</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        @if (Model.UnitsInStock > 0)
+                        {
+                            <form asp-action="AddToCart" method="post" class="mt-4">
+                                <input type="hidden" name="productID" value="@Model.ProductID" />
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="mb-3">
+                                            <label for="quantity" class="form-label">Cantidad</label>
+                                            <input type="number" id="quantity" name="quantity" class="form-control" value="1" min="1" max="@Model.UnitsInStock">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-success btn-lg w-100">
+                                            <i class="bi bi-cart-plus"></i> Agregar al Carrito
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card store-soft-card store-sticky">
+                        <div class="card-body">
+                        <h5 class="card-title">Información Adicional</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>ID:</strong> @Model.ProductID</li>
+                            <li class="mb-2"><strong>Nivel de Reorden:</strong> @Model.ReorderLevel</li>
+                            <li class="mb-2"><strong>Descontinuado:</strong> No</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                <p>Producto no encontrado</p>
+            </div>
+        }
+    </div>
+</div>
