@@ -1,0 +1,91 @@
+﻿@model NorthwindWebMvc.Models.Usuario
+
+@{
+    ViewData["Title"] = "Nuevo Usuario";
+}
+
+<div class="crud-page">
+    <div class="container">
+        <div class="card crud-card">
+
+            <!-- HEADER -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">
+                    <i class="bi bi-person-plus"></i> Registrar Usuario / Trabajador
+                </h4>
+
+                <a asp-action="Index"
+                   class="btn btn-outline-light btn-sm btn-action">
+                    <i class="bi bi-arrow-left"></i> Volver
+                </a>
+            </div>
+
+            <!-- MENSAJE ERROR -->
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show m-3">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    @ViewBag.Error
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <!-- BODY -->
+            <div class="card-body bg-white">
+
+                <form asp-action="Create" method="post" class="crud-form">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="NombreUsuario" class="form-label"></label>
+                            <input asp-for="NombreUsuario" class="form-control" />
+                            <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Clave" class="form-label"></label>
+                            <input asp-for="Clave" class="form-control" type="password" />
+                            <span asp-validation-for="Clave" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Rol" class="form-label"></label>
+                            <select asp-for="Rol" class="form-select">
+                                <option value="">Seleccione</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Usuario">Usuario</option>
+                            </select>
+                            <span asp-validation-for="Rol" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3 d-flex align-items-center">
+                            <div class="form-check mt-4">
+                                <input asp-for="Estado" class="form-check-input" />
+                                <label asp-for="Estado" class="form-check-label">
+                                    Activo
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- BOTONES -->
+                    <div class="d-flex gap-2 mt-3">
+                        <button type="submit" class="btn btn-outline-success btn-action">
+                            <i class="bi bi-save"></i> Guardar
+                        </button>
+
+                        <a asp-action="Index" class="btn btn-outline-secondary btn-action">
+                            <i class="bi bi-x-circle"></i> Cancelar
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_ValidationScriptsPartial" />
