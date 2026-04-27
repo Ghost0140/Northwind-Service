@@ -1,12 +1,14 @@
 ﻿using Grpc.Net.Client;
 using Microsoft.AspNetCore.Mvc;
 using NorthwindgRPC;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class OrderGrpcController : Controller
     {
         private Orders.OrdersClient _client;

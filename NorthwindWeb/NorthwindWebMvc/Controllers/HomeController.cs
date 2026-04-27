@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Diagnostics;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

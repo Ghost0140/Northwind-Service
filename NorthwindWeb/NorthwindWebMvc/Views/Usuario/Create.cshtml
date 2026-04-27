@@ -7,85 +7,94 @@
 <div class="crud-page">
     <div class="container">
         <div class="card crud-card">
-
-            <!-- HEADER -->
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">
-                    <i class="bi bi-person-plus"></i> Registrar Usuario / Trabajador
+                    <i class="bi bi-plus-circle"></i> Registrar Usuario
                 </h4>
 
                 <a asp-action="Index"
-                   class="btn btn-outline-light btn-sm btn-action">
+                       class="btn btn-light btn-sm btn-action">
                     <i class="bi bi-arrow-left"></i> Volver
                 </a>
             </div>
 
-            <!-- MENSAJE ERROR -->
-            @if (ViewBag.Error != null)
-            {
-                <div class="alert alert-danger alert-dismissible fade show m-3">
-                    <i class="bi bi-exclamation-triangle-fill"></i>
-                    @ViewBag.Error
-                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                </div>
-            }
-
-            <!-- BODY -->
             <div class="card-body bg-white">
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        @ViewBag.Error
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
 
-                <form asp-action="Create" method="post" class="crud-form">
-
-                    <div class="row">
-
-                        <div class="col-md-6 mb-3">
-                            <label asp-for="NombreUsuario" class="form-label"></label>
-                            <input asp-for="NombreUsuario" class="form-control" />
-                            <span asp-validation-for="NombreUsuario" class="text-danger"></span>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label asp-for="Clave" class="form-label"></label>
-                            <input asp-for="Clave" class="form-control" type="password" />
-                            <span asp-validation-for="Clave" class="text-danger"></span>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label asp-for="Rol" class="form-label"></label>
-                            <select asp-for="Rol" class="form-select">
-                                <option value="">Seleccione</option>
-                                <option value="Admin">Admin</option>
-                                <option value="Usuario">Usuario</option>
-                            </select>
-                            <span asp-validation-for="Rol" class="text-danger"></span>
-                        </div>
-
-                        <div class="col-md-6 mb-3 d-flex align-items-center">
-                            <div class="form-check mt-4">
-                                <input asp-for="Estado" class="form-check-input" />
-                                <label asp-for="Estado" class="form-check-label">
-                                    Activo
-                                </label>
-                            </div>
-                        </div>
-
+                <form asp-action="Create" method="post" class="row g-3 crud-form">
+                    <div class="col-md-6">
+                        <label asp-for="NombreUsuario" class="form-label"></label>
+                        <input asp-for="NombreUsuario" class="form-control" />
+                        <span asp-validation-for="NombreUsuario" class="text-danger"></span>
                     </div>
 
-                    <!-- BOTONES -->
-                    <div class="d-flex gap-2 mt-3">
-                        <button type="submit" class="btn btn-outline-success btn-action">
+                    <div class="col-md-6">
+                        <label asp-for="Clave" class="form-label"></label>
+                        <div class="input-group">
+                            <input asp-for="Clave" class="form-control" type="password" id="passwordInput" />
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                        <span asp-validation-for="Clave" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Rol" class="form-label"></label>
+                        <select asp-for="Rol" class="form-select">
+                            <option value="">-- Seleccione --</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Usuario">Usuario</option>
+                        </select>
+                        <span asp-validation-for="Rol" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check mt-4">
+                            <input asp-for="Estado" class="form-check-input" />
+                            <label asp-for="Estado" class="form-check-label">Activo</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 d-flex justify-content-end">
+                        <button type="submit"
+                                class="btn btn-success btn-crud-primary me-2">
                             <i class="bi bi-save"></i> Guardar
                         </button>
 
-                        <a asp-action="Index" class="btn btn-outline-secondary btn-action">
+                        <a asp-action="Index"
+                               class="btn btn-secondary btn-crud-secondary">
                             <i class="bi bi-x-circle"></i> Cancelar
                         </a>
                     </div>
-
                 </form>
-
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.getElementById('togglePassword').addEventListener('click', function() {
+        const passwordInput = document.getElementById('passwordInput');
+        const icon = this.querySelector('i');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+        }
+    });
+</script>
 
 <partial name="_ValidationScriptsPartial" />

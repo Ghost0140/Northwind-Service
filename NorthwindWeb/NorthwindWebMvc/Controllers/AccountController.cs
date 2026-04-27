@@ -17,6 +17,11 @@ namespace NorthwindWebMvc.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            if (HttpContext.Session.GetString("usuario") != null)
+            {
+                return RedirectUserByRole(HttpContext.Session.GetString("rol"));
+            }
+
             return View();
         }
 
@@ -63,6 +68,16 @@ namespace NorthwindWebMvc.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Login", "Account");
+        }
+
+        private IActionResult RedirectUserByRole(string? rol)
+        {
+            if (string.Equals(rol, "Admin", StringComparison.OrdinalIgnoreCase))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            return RedirectToAction("Catalog", "Store");
         }
     }
 }

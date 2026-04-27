@@ -1,13 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Text;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class ProductController : Controller
     {
+        private async Task<List<Product>> ObtenerProductos(string producto = "")
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7226/api/Product/");
+                HttpResponseMessage response = await client.GetAsync($"getProductos?producto={producto}");
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Product>>(apiResponse).ToList();
+            }
+        }
+
         private async Task<List<Supplier>> CargarProveedores()
         {
             List<Supplier> listaProveedores = new List<Supplier>();
@@ -34,15 +47,7 @@ namespace NorthwindWebMvc.Controllers
         }
         public async Task<IActionResult> Index(int page = 1, int pageSize = 10, string producto = "")
         {
-            List<Product> temporal = new List<Product>();
-
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri("https://localhost:7226/api/Product/");
-                HttpResponseMessage response = await client.GetAsync($"getProductos?producto={producto}");
-                string apiResponse = await response.Content.ReadAsStringAsync();
-                temporal = JsonConvert.DeserializeObject<List<Product>>(apiResponse).ToList();
-            }
+            List<Product> temporal = await ObtenerProductos(producto);
 
             var paged = new PagedList<Product>
             {

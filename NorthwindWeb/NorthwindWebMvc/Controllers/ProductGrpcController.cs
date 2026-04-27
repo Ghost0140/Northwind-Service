@@ -1,10 +1,12 @@
 ﻿using Grpc.Net.Client;
 using Microsoft.AspNetCore.Mvc;
 using NorthwindgRPC;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class ProductGrpcController : Controller
     {
         private Products.ProductsClient _client;
