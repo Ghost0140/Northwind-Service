@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Text;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class UsuarioController : Controller
     {
         private readonly IConfiguration _configuration;
@@ -17,6 +19,30 @@ namespace NorthwindWebMvc.Controllers
         private bool EsAdmin()
         {
             return HttpContext.Session.GetString("rol") == "Admin";
+        }
+
+        private async Task<int?> ObtenerIdAdminProtegido()
+        {
+            using (var client = new HttpClient())
+            {
+                string apiBase = _configuration["ApiSettings:BaseUrl"];
+                client.BaseAddress = new Uri(apiBase);
+
+                HttpResponseMessage response = await client.GetAsync("api/Usuario/listar");
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                var lista = JsonConvert.DeserializeObject<List<Usuario>>(apiResponse) ?? new List<Usuario>();
+
+                return lista
+                    .Where(u => string.Equals(u.Rol, "Admin", StringComparison.OrdinalIgnoreCase))
+                    .OrderBy(u => u.IdUsuario)
+                    .Select(u => (int?)u.IdUsuario)
+                    .FirstOrDefault();
+            }
         }
 
         public async Task<IActionResult> Index()
@@ -43,6 +69,7 @@ namespace NorthwindWebMvc.Controllers
                 }
             }
 
+            ViewBag.AdminProtegidoId = await ObtenerIdAdminProtegido();
             return View(lista);
         }
 
@@ -95,13 +122,40 @@ namespace NorthwindWebMvc.Controllers
         {
             if (HttpContext.Session.GetString("rol") != "Admin")
                 return RedirectToAction("Index", "Home");
+            
+            // Obtener usuario a desactivar
+            Usuario usuario = new Usuario();
 
             using (var client = new HttpClient())
             {
                 string apiBase = _configuration["ApiSettings:BaseUrl"];
                 client.BaseAddress = new Uri(apiBase);
 
-                await client.DeleteAsync($"api/Usuario/eliminar/{id}");
+                var response = await client.GetAsync($"api/Usuario/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    usuario = JsonConvert.DeserializeObject<Usuario>(json);
+
+                    // Proteger siempre al primer usuario Admin creado.
+                    int? adminProtegidoId = await ObtenerIdAdminProtegido();
+                    if (adminProtegidoId.HasValue && usuario.IdUsuario == adminProtegidoId.Value)
+                    {
+                        TempData["error"] = "El primer usuario Admin creado no puede desactivarse";
+                        return RedirectToAction("Index");
+                    }
+
+                    // Cambiar estado a inactivo
+                    usuario.Estado = false;
+
+                    var jsonUpdate = JsonConvert.SerializeObject(usuario);
+                    var content = new StringContent(jsonUpdate, Encoding.UTF8, "application/json");
+
+                    await client.PutAsync("api/Usuario/actualizar", content);
+
+                    TempData["mensaje"] = "Usuario desactivado correctamente";
+                }
             }
 
             return RedirectToAction("Index");
@@ -139,18 +193,41 @@ namespace NorthwindWebMvc.Controllers
             if (HttpContext.Session.GetString("rol") != "Admin")
                 return RedirectToAction("Index", "Home");
 
-            using (var client = new HttpClient())
+            if (!ModelState.IsValid)
             {
-                string apiBase = _configuration["ApiSettings:BaseUrl"];
-                client.BaseAddress = new Uri(apiBase);
-
-                var json = JsonConvert.SerializeObject(usuario);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                await client.PutAsync("api/Usuario/actualizar", content);
+                return View(usuario);
             }
 
-            return RedirectToAction("Index");
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    string apiBase = _configuration["ApiSettings:BaseUrl"];
+                    client.BaseAddress = new Uri(apiBase);
+
+                    var json = JsonConvert.SerializeObject(usuario);
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = await client.PutAsync("api/Usuario/actualizar", content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        TempData["mensaje"] = "Usuario actualizado correctamente";
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        var errorContent = await response.Content.ReadAsStringAsync();
+                        ViewBag.Error = $"Error al actualizar: {errorContent}";
+                        return View(usuario);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = $"Error: {ex.Message}";
+                return View(usuario);
+            }
         }
     }
 }

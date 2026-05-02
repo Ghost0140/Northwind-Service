@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Text;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class ShipperController : Controller
     {
         public async Task<IActionResult> Index(string? nombre, int page = 1, int pageSize = 10)

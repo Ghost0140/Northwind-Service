@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
+using NorthwindWebMvc.Filters;
 using NorthwindWebMvc.Models;
 using System.Text;
 
 namespace NorthwindWebMvc.Controllers
 {
+    [SessionRoleAuthorize(RequiredRole = "Admin")]
     public class CustomerController : Controller
     {
         private async Task<List<Cargo>> CargarCargos()

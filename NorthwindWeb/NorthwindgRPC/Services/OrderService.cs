@@ -14,7 +14,7 @@ namespace NorthwindgRPC
         }
 
         string cadena = "server=.;database=Northwind; trusted_Connection=true;" +
-            "MultipleActiveResultSets=true; TrustServerCertificate=false; Encrypt=false";
+            "MultipleActiveResultSets=true; TrustServerCertificate=false; Encrypt=false";  
 
         List<Orden> ListaPorCliente(string customerID)
         {
